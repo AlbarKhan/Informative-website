@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+    <!-- nav-bar.................
+     ......................-->
     <header>
         <div class="topnav">
             <div class="logo">
@@ -25,8 +27,8 @@
         </div>
         <div class="bottom-nav">
             <div class="sidebar" id="mySidebar">
+                <div class="close-btn"><a href=""><i class="fa fa-close"></i></a></div>
                 <div class="menu">
-                    <div class="close-btn"><a href=""><i class="fa fa-close"></i></a></div>
                     <div class="item"><a href="#">HOME</a></div>
                     <div class="item"><a href="#">ABOUT</a></div>
                     <div class="item"><a href="#">SERVICES</a></div>
@@ -46,13 +48,14 @@
             </div>
         </div>
     </header>
+    <!-- nav-bar end -->
     <section>
         <div class="home">
             <div class="back-img">
                 <!-- <img src="back-img1.png" alt=""> -->
             </div>
             <div class="home-info">
-                <h1>Start Planting Trees,Stop Global Warming</h1>
+                <h1>Start Planting Trees,Stop Global Warminjg</h1>
                 <p>Help us to plant trees around the world and save the mothernature from unwanted disasters. Millions of innocent lives we lost every year because of disasters</p>
                 <a href="#">Join Events</a>
             </div>
@@ -76,11 +79,13 @@
             $('.menu-btn').click(function (){
                 $('.sidebar.responsive').addClass('active');
                 $('.menu-btn').hide();
+                $('.home-info').hide();
             })
 
             $('.close-btn').click(function (){
                 $('.sidebar.responsive').removeClass('active');
                 $('.menu-btn').show();
+                $('.home-info').show();
             })
         })
     </script>

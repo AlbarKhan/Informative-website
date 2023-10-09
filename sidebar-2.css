@@ -22,6 +22,8 @@ header{
     width: 100%;
 }
 
+/* nav-bar */
+
 .topnav {
     margin: 0px 200px;
     margin-top: 50px;
@@ -65,14 +67,17 @@ header{
 }
 .bottom-nav .sidebar .menu {
     display: flex;
-    gap: 10px;
+    gap: 32px;
 }
 .sidebar .close-btn{
     display: none;
+    font-size: 30px;
 }
 .bottom-nav .menu-btn {
     display: none;
 }
+
+/* navbar -end */
 
 .home .back-img{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./back-img1.png");
@@ -82,7 +87,10 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
+    z-index: -1;
 }
+
+/* home section */
 
 .home{
     /* position: relative; */
@@ -98,7 +106,6 @@ header{
     align-items: center;
     gap: 30px;
     line-break: auto;
-    /* border: 10px solid white; */
     text-align: center;color: white;
 }
 
@@ -109,6 +116,8 @@ header{
     background-color: #23A884;
     width: 20%;
 }
+
+/* home section end */
 
 
 @media(max-width:1025px){
@@ -124,6 +133,9 @@ header{
         display: flex;
         justify-content: center;
     }
+    .bottom-nav .sidebar .menu {
+        gap: 8px;
+    }
     .home-info a{
         width: 20%;
     }
@@ -132,6 +144,8 @@ header{
     span{
         font-size: 16px;
     }
+
+    /* nav-bar */
     .sidebar {
         display: none;
     }
@@ -147,7 +161,7 @@ header{
         display: block;
         float: right;
         position: fixed;
-        width: 50%;
+        width: 80%;
         top: 0;
         right: 0px;
         height: 100%;
@@ -166,6 +180,9 @@ header{
     }
     .sidebar.respponsive.active{
         right: 0px;
+        /* overflow: hidden; */
+        z-index: index 1;
+        opacity: 5;
     }
     
     .sidebar.responsive .menu{
@@ -189,16 +206,11 @@ header{
     }
     
     .sidebar.responsive .close-btn{
-        position: absolute;
-        top: 15px;
-        left: -15px;
-        width: 28px;
-        height: 28px;
-        border-radius: 30px;
-        padding: 5px;
-        background-color: #23A884;
-        text-align: center;
-        padding-top: -4px;
+        
+        padding: 15px;
+        margin-bottom: 20px;
+        text-align: end;
+        font-size: 30px;
     }
     
     .sidebar.respponsive .close-btn i{
@@ -210,11 +222,11 @@ header{
 
         height: fit-content;
         background-color: white;
-        /* border: 1px solid; */
     }
 
     .bottom-nav a{
         color: #5C686E;
+        padding-left: 20px;
     }
     
     .bottom-nav .menu-btn{
@@ -230,8 +242,11 @@ header{
         display: block;
     }
 
+    /* nav-bar end */
+
     .home-info{
         position: absolute;
+        z-index: 0;
         top: 40%;
         left: 5%;
         right: 5%;
@@ -244,4 +259,7 @@ header{
         width: 35%;
     }
 
+    .sidebar.responsive.active .home-info {
+        display: none;
+    }
 }
