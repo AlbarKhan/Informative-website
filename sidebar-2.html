@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sidebar-2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="logo">
+                 <b>CHARITY</b> WORLD
+            </div>
+            <div class="contacts">
+                <div class="contact-item">
+                    <span> <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1-2279-876-528</span>
+                </div>
+                <div class="contact-item">
+                    <span><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;support@charityworld.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div class="sidebar" id="mySidebar">
+                <div class="menu">
+                    <div class="close-btn"><a href=""><i class="fa fa-close"></i></a></div>
+                    <div class="item"><a href="#">HOME</a></div>
+                    <div class="item"><a href="#">ABOUT</a></div>
+                    <div class="item"><a href="#">SERVICES</a></div>
+                    <div class="item"><a href="#">CAUSES</a></div>
+                    <div class="item"><a href="#">EVENTS</a></div>
+                    <div class="item"><a href="#">PEOPLE</a></div>
+                    <div class="item"><a href="#">DONATION</a></div>
+                    <div class="item"><a href="#">TESTIMONIALS  </a></div>
+                    <div class="item"><a href="#">SHOP</a></div>
+                    <div class="item"><a href="#">NEWS</a></div>
+                    <div class="item"><a href="#">CONTACT</a></div>
+                </div>
+            </div>
+            <div><i class="fas fa-flaticon-paper-bag"></i></div>
+            <div class="menu-btn" id="slide-in">
+                <a href="#" onclick="myFunction()"><i class="fas fa-bars"></i></a>
+            </div>
+        </div>
+    </header>
+    <div class="main-wrappper">
+        <div class="back-img">
+            <!-- <img src="back-img1.png" alt=""> -->
+        </div>
+    </div>
+    <script>
+        function myFunction(){
+            const x = document.getElementById("mySidebar");
+
+            if(x.className == "sidebar"){
+                x.className += " responsive";
+            }
+            else{
+                x.className = "sidebar";
+            }
+        }
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.menu-btn').click(function (){
+                $('.sidebar.responsive').addClass('active');
+                $('.menu-btn').hide();
+            })
+
+            $('.close-btn').click(function (){
+                $('.sidebar.responsive').removeClass('active');
+                $('.menu-btn').show();
+            })
+        })
+    </script>
+    
+</body>
+</html>
