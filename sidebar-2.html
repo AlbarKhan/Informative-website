@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="sidebar-2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
@@ -12,41 +13,39 @@
     <!-- nav-bar.................
      ......................-->
     <header>
-        <div class="topnav">
-            <div class="logo">
-                 <b>CHARITY</b> WORLD
-            </div>
-            <div class="contacts">
-                <div class="contact-item">
-                    <span> <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1-2279-876-528</span>
+        <div class="nav-bar">
+            <div class="topnav">
+                <div class="logo">
+                     <b>CHARITY</b> WORLD
                 </div>
-                <div class="contact-item">
-                    <span><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;support@charityworld.com</span>
+                <div class="contacts">
+                    <div class="contact-item">
+                        <span> <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;+1-2279-876-528</span>
+                    </div>
+                    <div class="contact-item">
+                        <span><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;&nbsp;support@charityworld.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <div class="sidebar" id="mySidebar">
+                    <div class="close-btn"><a href=""><i class="fa fa-close"></i></a></div>
+                    <div class="menu">
+                        <div class="item"><a href="#">HOME</a></div>
+                        <div class="item"><a href="#about">ABOUT</a></div>
+                        <div class="item"><a href="#">SERVICES</a></div>
+                        <div class="item"><a href="#">TESTIMONIALS  </a></div>
+                        <div class="item"><a href="#">SHOP</a></div>
+                        <div class="item"><a href="#">CONTACT</a></div>
+                    </div>
+                </div>
+                <div><i class="fas fa-flaticon-paper-bag"></i></div>
+                <div class="menu-btn" id="slide-in">
+                    <a href="#" onclick="myFunction()"><i class="fas fa-bars"></i></a>
                 </div>
             </div>
         </div>
-        <div class="bottom-nav">
-            <div class="sidebar" id="mySidebar">
-                <div class="close-btn"><a href=""><i class="fa fa-close"></i></a></div>
-                <div class="menu">
-                    <div class="item"><a href="#">HOME</a></div>
-                    <div class="item"><a href="#">ABOUT</a></div>
-                    <div class="item"><a href="#">SERVICES</a></div>
-                    <div class="item"><a href="#">CAUSES</a></div>
-                    <div class="item"><a href="#">EVENTS</a></div>
-                    <div class="item"><a href="#">PEOPLE</a></div>
-                    <div class="item"><a href="#">DONATION</a></div>
-                    <div class="item"><a href="#">TESTIMONIALS  </a></div>
-                    <div class="item"><a href="#">SHOP</a></div>
-                    <div class="item"><a href="#">NEWS</a></div>
-                    <div class="item"><a href="#">CONTACT</a></div>
-                </div>
-            </div>
-            <div><i class="fas fa-flaticon-paper-bag"></i></div>
-            <div class="menu-btn" id="slide-in">
-                <a href="#" onclick="myFunction()"><i class="fas fa-bars"></i></a>
-            </div>
-        </div>
+
     </header>
     <!-- nav-bar end -->
     <section>
@@ -55,12 +54,97 @@
                 <!-- <img src="back-img1.png" alt=""> -->
             </div>
             <div class="home-info">
-                <h1>Start Planting Trees,Stop Global Warminjg</h1>
+                <h1>Start Planting Trees,Stop Global Warming</h1>
                 <p>Help us to plant trees around the world and save the mothernature from unwanted disasters. Millions of innocent lives we lost every year because of disasters</p>
                 <a href="#">Join Events</a>
             </div>
         </div>
     </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section>
+        <div class="about container-md p-3">
+
+            <div class="about-info" id="about">
+                <h4>ABOUT THE COMPANY</h4>
+                <div class="about-item">
+                    <div class="item">
+                        <a href="#about" class="sub-btn">CHARITY / FOUNDER <i class="fas fa-plus"></i></a>
+                        <div class="sub-menu">  
+                            <p class="sub-item">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#about" class="sub-btn">CHARITY / FOUNDER <i class="fa fa-plus"></i></a>
+                        <div class="sub-menu">  
+                            <p class="sub-item">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="#about" class="sub-btn">CHARITY / FOUNDER <i class="fa fa-plus"></i></a>
+                        <div class="sub-menu">  
+                            <p class="sub-item">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="about-img.png" alt="" width="400px">
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+
+
+    <!-- footer -->
+        <footer>
+            <div class="foot-top">
+                <div class="foot-logo">
+                    <b>CHARITY</b> WORLD
+                </div>
+                <div class="foot-top-link">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Service</a>
+                    <a href="">Testimonials</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+
+            <div class="foot-mid">
+                <div class="foot-mid-item" id="item1">
+                    <h3>About Us</h3>
+                    <p>FOR 11+ YEARS, WE'VE EXCELLED IN TALLY SOLUTIONS, DELIVERING QUALITY AND SATISFACTION.</p>
+                </div>
+                <div class="foot-mid-item">
+                    <h3>OUR SERVICES</h3>
+                    <a href="">Web Development</a>
+                    <a href="">App Development</a>
+                    <a href="">Tally Modules </a>
+                    <a href="">Static website</a>
+                    <a href="">Dynamic website</a>
+                </div>
+                <div class="foot-mid-item">
+                    <h3>QUICK LINKS</h3>
+                    <a href="">Home</a>
+                    <a href="">About us</a>
+                    <a href="">Services</a>
+                    <a href="">Contact us</a>
+                    <a href="">Home</a>
+                </div>
+                <div class="foot-mid-item">
+                    <h3>GET IN TOUCH</h3>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                </div>
+            </div>
+        </footer>
+    <!-- footer -->
+
     <script>
         function myFunction(){
             const x = document.getElementById("mySidebar");
@@ -84,9 +168,21 @@
 
             $('.close-btn').click(function (){
                 $('.sidebar.responsive').removeClass('active');
-                $('.menu-btn').show();
-                $('.home-info').show();
+                // $('.menu-btn').show();
+                setTimeout(function(){
+                    $('.menu-btn').show();
+                }, 3000);
+                $('.home-info').hide();
+                setTimeout(function() {
+                     $('.home-info').show();
+                 }, 3000);
             })
+
+            $('.sub-btn').click(function(){
+                $(this).next('.sub-menu').slideToggle();
+                // $(this).find('.dropdown').toggleClass('rotate'); 
+            })
+
         })
     </script>
     

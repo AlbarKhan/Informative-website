@@ -4,13 +4,19 @@
     box-sizing: border-box;
     font-family: "Source Sans Pro",sans-serif;
 }
+:root{
+    --primary:#23A884;
+    --secondary:#5C686E;
+    --white:white;
+    --black:black;
+}
 a{
     font-size: 15px;
     text-decoration: none;
     font-weight: bold;
 }
 span{
-    color: white;
+    color: var(--white);
     margin: 0px 20px;
     font-size: 20px;
 }
@@ -18,7 +24,7 @@ header{
     /* border: 1px solid; */
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     width: 100%;
 }
 
@@ -37,7 +43,7 @@ header{
     /* gap: 140px; */
 }
 .topnav .logo{
-    color: white;
+    color:var(--white);
     font-size: 30px;
     text-align: center;
 }
@@ -50,7 +56,7 @@ header{
     /* line-height: 20px; */
 }
 .topnav i{
-    color: #23A884;
+    color: var(--primary);
 }
 
 .bottom-nav{
@@ -63,12 +69,17 @@ header{
     height: fit-content;
 }
 .bottom-nav a{
-    color: white;
+    /* color: #123a54; */
+    color: var(--white);
+    text-decoration: none;
 }
+
 .bottom-nav .sidebar .menu {
     display: flex;
-    gap: 32px;
+    gap: 124px;
+    /* text-align: center; */
 }
+
 .sidebar .close-btn{
     display: none;
     font-size: 30px;
@@ -83,6 +94,7 @@ header{
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./back-img1.png");
     max-width: 100%;
     height: 100vh;
+    /* position: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -92,10 +104,6 @@ header{
 
 /* home section */
 
-.home{
-    /* position: relative; */
-    /* display: flex; */
-}
 .home-info{
     position: absolute;
     top: 40%;
@@ -106,18 +114,148 @@ header{
     align-items: center;
     gap: 30px;
     line-break: auto;
-    text-align: center;color: white;
+    text-align: center;color: var(--white);
 }
 
 .home-info a{
-    color: white;
+    color: var(--white);
     font-size: 14px;
     padding: 5px 10px;
-    background-color: #23A884;
+    background-color: var(--primary);
     width: 20%;
 }
 
+.home .home-info h1{
+    font-family: "Dosis",sans-serif;
+    font-size: 60px;
+}
+
 /* home section end */
+
+/* About section */
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin-top: 30px;
+}
+.about-info{
+    /* border: 1px solid; */
+    width: 60%;
+}
+
+
+/* .about-info .about-item .about-head{
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 15px;
+    margin-bottom: 15px;
+}
+
+.about-info .about-item .about-head a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.item .sub-menu{
+    display: none;
+} */
+
+.about-item{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.about-item .item a{
+    background-color: var(--primary);
+    width: 100%;
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 15px;
+}
+.about-item .item i{
+    position: absolute;
+    right: 602px;
+    padding-top: 3px;
+}
+
+.about-item .item{
+    margin-bottom: 20px;
+}
+
+/* About section end */
+
+
+/* FOTTER START */
+
+footer{
+    background-color: var(--primary);
+    padding: 0px 30px;
+    height: 100%;
+    color: var(--white);
+}
+
+footer .foot-top {
+    display: flex;
+    border-bottom:1px solid ;
+    /* text-align: center; */
+    justify-content: space-between;
+}
+
+.foot-top .foot-logo{
+    color:var(--white);
+    font-size: 30px;
+}
+.foot-top .foot-top-link{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.foot-top .foot-top-link a{
+    color: var(--white);
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 30px;
+    /* margin-top: 15px; */
+}
+
+footer .foot-mid{
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-content: space-around;
+}
+
+footer .foot-mid .foot-mid-item{
+    /* width: fit-content; */
+    /* border: 1px solid; */
+    /* text-align: center; */
+    padding: 30px 0px;
+}
+footer .foot-mid .foot-mid-item a{
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 18px;
+}
+footer #item1{
+    margin-right: 20px;
+    line-break: auto;
+}
+
+
+
+
+
+
+
+
+/* FOOTER END */
 
 
 @media(max-width:1025px){
@@ -134,10 +272,24 @@ header{
         justify-content: center;
     }
     .bottom-nav .sidebar .menu {
-        gap: 8px;
+        gap: 80px;
     }
     .home-info a{
         width: 20%;
+    }
+    .home .home-info h1{
+        font-size: 40px;
+    }
+
+    .about .about-img{
+        display: none;
+    }
+
+    .about-info{
+        width: 100%;
+    }
+    .about-item .item i{
+        right: 70px;
     }
 }
 @media(max-width:886px){
@@ -214,20 +366,20 @@ header{
     }
     
     .sidebar.respponsive .close-btn i{
-        color: white;
+        color: var(--white);
         font-size: 18px;
     }
 
      header .bottom-nav{
 
         height: fit-content;
-        background-color: white;
+        background-color: var(--white);
     }
-
+/* 
     .bottom-nav a{
-        color: #5C686E;
-        padding-left: 20px;
-    }
+        color: var(#5C686E) !important;
+    } */
+    /* .bottom-nav a */
     
     .bottom-nav .menu-btn{
         display: block;
@@ -252,7 +404,7 @@ header{
         right: 5%;
         line-break: auto;
         /* border: 10px solid white; */
-        text-align: center;color: white;
+        text-align: center;color: var(--white);
     }
 
     .home-info a{
@@ -261,5 +413,36 @@ header{
 
     .sidebar.responsive.active .home-info {
         display: none;
+    }
+
+    .home .home-info h1{
+        font-size: 30px;
+    }
+
+    .about-info .about-item a{
+        font-size: 15px;
+    }
+
+    .about-item .item i{
+        right: 45px;
+    }
+
+    footer{
+        padding: 0px 10px;
+    }
+
+    .foot-top .foot-logo {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    .foot-top .foot-top-link a{
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    footer .foot-mid{
+        text-align: center;
+        grid-template-columns: repeat(2,1fr);
     }
 }
