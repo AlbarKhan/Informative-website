@@ -145,24 +145,6 @@ header{
     width: 60%;
 }
 
-
-/* .about-info .about-item .about-head{
-    background-color: var(--primary);
-    display: flex;
-    justify-content: space-between;
-    padding: 2px 15px;
-    margin-bottom: 15px;
-}
-
-.about-info .about-item .about-head a{
-    color: var(--white);
-    text-decoration: none;
-}
-
-.item .sub-menu{
-    display: none;
-} */
-
 .about-item{
     width: 100%;
     margin-top: 20px;
