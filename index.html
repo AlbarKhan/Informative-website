@@ -31,12 +31,12 @@
                 <div class="sidebar" id="mySidebar">
                     <div class="close-btn"><a href=""><i class="fa fa-close"></i></a></div>
                     <div class="menu">
-                        <div class="item"><a href="#">HOME</a></div>
-                        <div class="item"><a href="#about">ABOUT</a></div>
-                        <div class="item"><a href="#service">SERVICES</a></div>
-                        <div class="item"><a href="#">TESTIMONIALS  </a></div>
-                        <div class="item"><a href="#">SHOP</a></div>
-                        <div class="item"><a href="#footer">CONTACT</a></div>
+                        <div class="item"><a href="#" onclick="closeSideBar()">HOME</a></div>
+                        <div class="item"><a href="#about" onclick="closeSideBar()">ABOUT</a></div>
+                        <div class="item"><a href="#service" onclick="closeSideBar()">SERVICES</a></div>
+                        <div class="item"><a href="#" onclick="closeSideBar()">TESTIMONIALS  </a></div>
+                        <div class="item"><a href="#" onclick="closeSideBar()">SHOP</a></div>
+                        <div class="item"><a href="#foot-mid" onclick="closeSideBar()">CONTACT</a></div>
                     </div>
                 </div>
                 <div><i class="fas fa-flaticon-paper-bag"></i></div>
@@ -64,88 +64,47 @@
 
     <!-- ABOUT SECTION -->
     <section>
-        <div class="about container-md p-3">
+        <div class="about container  p-3">
 
             <div class="about-info" id="about">
                 <h4>ABOUT THE COMPANY</h4>
                 <div class="about-item">
                     <div class="item">
-                        <a href="#about" class="sub-btn">CHARITY / FOUNDER <i class="fas fa-plus"></i></a>
+                        <a href="#about" class="sub-btn" onclick="minusIcon()">CHARITY / FOUNDER <div class="icon minus" id="icon">+</div></a>
                         <div class="sub-menu">  
-                            <p class="sub-item">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident</p>
+                            <p class="sub-item">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident
+                                Dr. Chris Dayagdag. It’s about creating a user experience that is data driven. We know what customers are searching for...
+                                N.J. Rubenking. They have questions they think you can answer. ... It’s when you or someone else visits code written...</p>
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#about" class="sub-btn">CHARITY / FOUNDER <i class="fa fa-plus"></i></a>
+                        <a href="#about" class="sub-btn">CHARITY / FOUNDER <div class="icon" id="icon12">+</div></a>
                         <div class="sub-menu">  
-                            <p class="sub-item">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident</p>
+                            <p class="sub-item">
+                                Dr. Chris Dayagdag. It’s about creating a user experience that is data driven. We know what customers are searching for...
+                                N.J. Rubenking. They have questions they think you can answer. ... It’s when you or someone else visits code written...
+                                N.J. Rubenking. After you’ve worked on a site for even a few weeks, you can’t see it freshly anymore. You know too much.
+                                Edsger W. Dijkstra. It is in effect, conditioned to prefer bad design because that is what it lives wit</p>
                         </div>
                     </div>
                     <div class="item">
-                        <a href="#about" class="sub-btn">CHARITY / FOUNDER <i class="fa fa-plus"></i></a>
+                        <a href="#about" class="sub-btn">CHARITY / FOUNDER <div class="icon" id="icon2">+</div></a>
                         <div class="sub-menu">  
-                            <p class="sub-item">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident</p>
+                            <p class="sub-item">
+                                Dr. Chris Dayagdag. It’s about creating a user experience that is data driven. We know what customers are searching for...
+                                N.J. Rubenking. They have questions they think you can answer. ... It’s when you or someone else visits code written...
+                                N.J. Rubenking. After you’ve worked on a site for even a few weeks, you can’t see it freshly anymore. You know too much.
+                                Edsger W. Dijkstra. It is in effect, conditioned to prefer bad design because that is what it lives wit</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="about-img">
-                <img src="about-img.png" alt="" width="400px">
+                <img src="web-team-img.png" alt="" width="400px">
             </div>
         </div>
     </section>
     <!-- ABOUT SECTION END -->
-
-    <!-- SERVICES START -->
-    <section>
-        <div class="services container-fluid pt-5" id="service">
-
-            <div class="service-head container-md">
-                <h1>Services</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-
-            <div class="services-content container-md">
-                <div class="services-content-item">
-                    <i class="fa-brands fa-facebook"></i>
-                    <h3>Web Development</h3>
-                    <p>Icididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation..</p>
-                    <a href="#">Details</a>
-                </div>
-                <div class="services-content-item ">
-                    <i class="fa-brands fa-facebook"></i>
-                    <h3>Android Development</h3>
-                    <p>Icididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation..</p>
-                    <a href="#">Details</a>
-                </div>
-                <div class="services-content-item ">
-                    <i class="fa-brands fa-facebook"></i>
-                    <h3>Tally Modules</h3>
-                    <p>Icididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation..</p>
-                    <a href="#">Details</a>
-                </div>
-                <div class="services-content-item ">
-                    <i class="fa-brands fa-facebook"></i>
-                    <h3>Web Development</h3>
-                    <p>Icididunt ut labore et dolore magna aliqua. Ut enim ad 3ini2 veniam,4quis nostrud exercitation..</p>
-                    <a href="#">Details</a>
-                </div>
-                <div class="services-content-item">
-                    <i class="fa-brands fa-facebook"></i>
-                    <h3>Android Development</h3>
-                    <p>Icididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation..</p>
-                    <a href="#">Details</a>
-                </div>
-                <div class="services-content-item">
-                    <i class="fa-brands fa-facebook"></i>
-                    <h3>Tally Modules</h3>
-                    <p>Icididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation..</p>
-                    <a href="#">Details</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- SERVICES END -->
 
     <!-- OUR TEAM  START-->
     <section>
@@ -178,42 +137,100 @@
 
     <!-- OUR TEAM END -->
 
+    <!-- SERVICES START -->
+    <section>
+        <div class="services container-fluid pt-5" id="service">
+
+            <div class="service-head container-md">
+                <h1>Services</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            </div>
+
+            <div class="services-content container-md">
+                <div class="services-content-item">
+                    <h3>Web Development</h3>
+                    <p>“Your website is the center of your digital ecosystem, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.”
+                    </p>
+                </div>
+                <div class="services-content-item ">
+                    <h3>Android Development</h3>
+                    <p>“Websites promote you 24/7: No employee will do that.” - Paul Cookson.
+                        “A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away” - Antonie De-Saint Exupery.
+                        “Website without visitors is like a ship lost in the horizon.” - Dr. Christopher Dayagda.</p>
+                </div>
+                <div class="services-content-item ">
+                    <h3>Tally Modules</h3>
+                    <p>“A successful website does three things: It attracts the right kinds of visitors. Guides them to the main services or product you offer. Collect Contact details for future ongoing relation.”
+                        “Let us take you into a deeper experience, make a moment a lasting conveyable memory. Let us help build your tribe.” ― Deep Immersion.
+                        “We don't just sell websites, we create websites that SELL.”</p>
+
+                </div>
+                <div class="services-content-item ">
+                    <h3>Web Development</h3>
+                    <p>
+                        “Websites promote you 24/7: No employee will do that.” - Paul Cookson.
+                        “A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away” - Antonie De-Saint Exupery.
+                        “Website without visitors is like a ship lost in the horizon.” - Dr. Christopher Dayagda.
+                    </p>
+
+                </div>
+                <div class="services-content-item">
+                    <h3>Android Development</h3>
+                    <p>
+                        “Your website is the center of your digital ecosystem, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.”
+                    </p>
+
+                </div>
+                <div class="services-content-item">
+                    <h3>Tally Modules</h3>
+                    <p>
+                        “Websites promote you 24/7: No employee will do that.” - Paul Cookson.
+                        “A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away” - Antonie De-Saint Exupery.
+                        “Website without visitors is like a ship lost in the horizon.” - Dr. Christopher Dayagda4
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES END -->
 
     <!-- footer -->
         <footer>
-            <div class="foot-top" id="footer">
-                <div class="foot-logo">
-                    <b>CHARITY</b> WORLD
-                </div>
-            </div>
-
-            <div class="foot-mid">
+            <div class="foot-mid" id="foot-mid">
                 <div class="foot-mid-item" id="item1">
-                    <h3>About Us</h3>
+                    <h4>About Us</h4>
                     <p>FOR 11+ YEARS, WE'VE EXCELLED IN TALLY SOLUTIONS, DELIVERING QUALITY AND SATISFACTION.</p>
                 </div>
                 <div class="foot-mid-item">
-                    <h3>QUICK LINKS</h3>
-                    <a href="">Home</a>
-                    <a href="">About us</a>
-                    <a href="">Services</a>
-                    <a href="">Testimonials</a>
-                    <a href="">Contact us</a>
+                    <h4>QUICK LINKS</h4>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>Home</a>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>About us</a>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>Services</a>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>Testimonials</a>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>Contact us</a>
                 </div>
                 <div class="foot-mid-item">
-                    <h3>OUR SERVICES</h3>
-                    <a href="">Web Development</a>
-                    <a href="">App Development</a>
-                    <a href="">Tally Modules </a>
-                    <a href="">Static website</a>
-                    <a href="">Dynamic website</a>
+                    <h4>OUR SERVICES</h4>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>Web Development</a>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>App Development</a>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>Tally Modules </a>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>Static website</a>
+                    <a href=""><i class="fa-solid fa-chevron-right"></i>Dynamic website</a>
                 </div>
-                <div class="foot-mid-item">
-                    <h3>GET IN TOUCH</h3>
+                <div class="foot-mid-item" id="foot-mid-item-4">
+                    <h4>GET IN TOUCH</h4>
                     <p><i class="fa fa-phone"> </i> + 9958473633</p>
                     <p><i class="fa fa-envelope"></i>albarkhan60@gmail.com</p>
                     <p><i class="fa fa-home"></i>Room no:11 POstman chawl Golibar Santacruz (east)</p>
-                    <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-google"></i><i class="fa-brands fa-twitter"></i></p>
+                    <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-whatsapp"></i></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-youtube"></i></p>
+                </div>
+            </div>
+
+            <div class="foot-bottom">
+                <div class="items">
+                    <p><i class="fa-regular fa-copyright"></i> Copyright <b>Raza Software & Technologies</b>. All Rights Reserved</p>
+                    <span>Designed & Develope by <a href=""> Raza Software & Technologies</a></span>
                 </div>
             </div>
         </footer>
@@ -228,6 +245,30 @@
             }
             else{
                 x.className = "sidebar";
+            }
+        }
+        function closeSideBar(){
+            const x = document.getElementById("mySidebar");
+            x.className  = "sidebar";
+            if (window.innerWidth <= 886) {
+                setTimeout(function () {
+                  $('.menu-btn').show();
+                }, 500);
+              } 
+              else {
+                $('.menu-btn').hide();
+                 }
+        }
+        function minusIcon(){
+            const i = document.getElementById("icon");
+            const i1 = document.getElementById("icon1");
+            const i2 = document.getElementById("icon2");
+
+            if(i.className == "icon"){
+                i.className += " minus";
+            }
+            else{
+                i.className = "icon";
             }
         }
     </script>
