@@ -72,6 +72,7 @@ header{
 }
 .bottom-nav a i{
     color: var(--primary);
+    font-size: 21px;
 }
 
 .bottom-nav .sidebar .menu {
@@ -133,19 +134,25 @@ header{
     position: relative;
 }
 
-.mid-section .up {
+.main-wrapper .to-top {
     position: fixed;
     right: 2%;
-    bottom: 50px;
+    bottom: 30px;
     width: 35px;
     height: 35px;
     border-radius: 7px;
-    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: var(--primary);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.mid-section .up a{
-    font-size: 20px;
+.main-wrapper .to-top.active{
+    opacity: 1;
+}
+.main-wrapper .to-top a{
+    font-size: 15px;
     color: white;
     text-decoration: none;
 }
@@ -471,7 +478,7 @@ footer .foot-bottom a{
         display: block;
         float: right;
         position: fixed;
-        width: 80%;
+        width: 50%;
         top: 0;
         right: 0px;
         height: 100%;
@@ -618,6 +625,9 @@ footer .foot-bottom a{
 
 @media (max-width:480px){
 
+    .sidebar.responsive{
+        width: 80%;
+    }
     .about-img{
         width: 95%;
     }

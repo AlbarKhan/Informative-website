@@ -64,10 +64,10 @@
     </section>
     <!-- HOME SECTION END-->
 
-    <div class="mid-section">
+    <div class="main-wrapper">
         <!-- ABOUT SECTION -->
-        <div class="up">
-            <a href="#home"><i class="fa-solid fa-chevron-up"></i></a>
+        <div class="to-top" id="to-top">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
         </div>
         <section>
             <div class="about container  p-3">
@@ -266,21 +266,46 @@
                  }, 2000);
               } 
               else {
-                $('.menu-btn').hide();
+                    if (window.pageXOffset > 788) {
+                        $('.menu-btn').hide();
+                    }
+                    else{
+                        // $('.menu-btn').show();
+                    }
+                // $('.menu-btn').hide();
                  }
         }
-        function minusIcon(){
-            const i = document.getElementById("icon");
-            const i1 = document.getElementById("icon1");
-            const i2 = document.getElementById("icon2");
+        // function minusIcon(){
+        //     const i = document.getElementById("icon");
+        //     const i1 = document.getElementById("icon1");
+        //     const i2 = document.getElementById("icon2");
 
-            if(i.className == "icon"){
-                i.className += " minus";
-            }
-            else{
-                i.className = "icon";
-            }
-        }
+        //     if(i.className == "icon"){
+        //         i.className += " minus";
+        //     }
+        //     else{
+        //         i.className = "icon";
+        //     }
+        // }
+            const toTop = document.querySelector('.to-top');
+            // const toTop = document.getElementById("to-top");
+            window.addEventListener("scroll",function(){
+                if (window.pageYOffset >=100) {
+                    toTop.classList.add('active');
+                }
+                else{
+                    toTop.classList.remove('active');
+                }
+            })
+
+        // window.addEventListener("scroll",function(){
+        //     if (window.pageYOffset) {
+        //         toTop.className += " active";
+        //     }
+        //     else{
+        //         toTop.className = "to-top";
+        //     }
+        // })
     </script>
 
     <script>
