@@ -129,6 +129,27 @@ header{
 }
 
 /* home section end */
+.mid-section{
+    position: relative;
+}
+
+.mid-section .up {
+    position: fixed;
+    right: 2%;
+    bottom: 50px;
+    width: 35px;
+    height: 35px;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: var(--primary);
+}
+.mid-section .up a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
 
 /* About section */
 
@@ -201,6 +222,7 @@ header{
 
 .about-item .item .sub-item{
     padding: 5px 0px;
+    transition: 3s;
 }
 
 /* About section end */
