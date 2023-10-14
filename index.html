@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <!-- nav-bar.................
@@ -34,9 +36,9 @@
                         <div class="item"><a href="#" onclick="closeSideBar()">HOME</a></div>
                         <div class="item"><a href="#about" onclick="closeSideBar()">ABOUT</a></div>
                         <div class="item"><a href="#service" onclick="closeSideBar()">SERVICES</a></div>
-                        <div class="item"><a href="#" onclick="closeSideBar()">TESTIMONIALS  </a></div>
+                        <div class="item"><a href="#event" onclick="closeSideBar()">TESTIMONIALS  </a></div>
                         <div class="item"><a href="#" onclick="closeSideBar()">SHOP</a></div>
-                        <div class="item"><a href="#foot-mid" onclick="closeSideBar()">CONTACT</a></div>
+                        <div class="item"><a href="#contact-us" onclick="closeSideBar()">CONTACT</a></div>
                     </div>
                 </div>
                 <div><i class="fas fa-flaticon-paper-bag"></i></div>
@@ -66,18 +68,16 @@
 
     <div class="main-wrapper">
         <!-- ABOUT SECTION -->
-        <div class="to-top" id="to-top">
-            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
-        </div>
+            <a href="#home" class="to-top" id="to-top"><i class="fa-solid fa-arrow-up"></i></a>
         <section>
-            <div class="about container  p-3">
+            <div class="about container-md mt-5">
 
                 <div class="about-info" id="about">
                     <h4>ABOUT THE COMPANY</h4>
                     <div class="about-item">
                         <div class="item">
                             <a href="#about" class="sub-btn" onclick="minusIcon()">CHARITY / FOUNDER <div class="icon minus" id="icon">+</div></a>
-                            <div class="sub-menu">  
+                            <div class="sub-menu" id="sub-menu-1">  
                                 <p class="sub-item">tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nos trud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excep teur sint occaecat cupidatat non proident
                                     Dr. Chris Dayagdag. It’s about creating a user experience that is data driven. We know what customers are searching for...
                                     N.J. Rubenking. They have questions they think you can answer. ... It’s when you or someone else visits code written...</p>
@@ -85,7 +85,7 @@
                         </div>
                         <div class="item">
                             <a href="#about" class="sub-btn">CHARITY / FOUNDER <div class="icon" id="icon12">+</div></a>
-                            <div class="sub-menu">  
+                            <div class="sub-menu" id="sub-menu-2">  
                                 <p class="sub-item">
                                     Dr. Chris Dayagdag. It’s about creating a user experience that is data driven. We know what customers are searching for...
                                     N.J. Rubenking. They have questions they think you can answer. ... It’s when you or someone else visits code written...
@@ -95,7 +95,7 @@
                         </div>
                         <div class="item">
                             <a href="#about" class="sub-btn">CHARITY / FOUNDER <div class="icon" id="icon2">+</div></a>
-                            <div class="sub-menu">  
+                            <div class="sub-menu" id="sub-menu-3">  
                                 <p class="sub-item">
                                     Dr. Chris Dayagdag. It’s about creating a user experience that is data driven. We know what customers are searching for...
                                     N.J. Rubenking. They have questions they think you can answer. ... It’s when you or someone else visits code written...
@@ -200,13 +200,130 @@
             </div>
         </section>
         <!-- SERVICES END -->
+
+            <!-- COUNTER START -->
+            <section>
+                <div class="event-head container-md text-center" id="event">
+                    <h1>Events</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                </div>
+                <div class="slider-main">
+                    <div class="slider">
+                        <div class="slides">
+                          <!--radio buttons start-->
+                          <input type="radio" name="radio-btn" id="radio1">
+                          <input type="radio" name="radio-btn" id="radio2">
+                          <input type="radio" name="radio-btn" id="radio3">
+                          <input type="radio" name="radio-btn" id="radio4">
+                          <!--radio buttons end-->
+                          <!--slide images start-->
+                          <div class="slide first">
+                            <img src="Andriod-team--img.png" alt="">
+                          </div>
+                          <div class="slide">
+                            <img src="web-team-img.png" alt="">
+                          </div>
+                          <div class="slide">
+                            <img src="ex1-img.png" alt="">
+                          </div>
+                          <div class="slide">
+                            <img src="web-teamn-img.png" alt="">
+                          </div>
+                          <!--slide images end-->
+                          <!--automatic navigation start-->
+                          <!-- <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                          </div> -->
+                          <!--automatic navigation end-->
+                        </div>
+                        <!--manual navigation start-->
+                        <div class="navigation-manual">
+                          <label for="radio1" class="manual-btn"></label>
+                          <label for="radio2" class="manual-btn"></label>
+                          <label for="radio3" class="manual-btn"></label>
+                          <label for="radio4" class="manual-btn"></label>
+                        </div>
+                        <!--manual navigation end-->
+                      </div>
+                 </div>
+    
+      <!--image slider end-->
+  
+                    <script type="text/javascript">
+                        var counter = 1;
+                        setInterval(function(){
+                          document.getElementById('radio' + counter).checked = true;
+                          counter++;
+                          if(counter > 4){
+                            counter = 1;
+                          }
+                        }, 3000);
+                    </script>
+                    </div>
+            </section>
+
+        <!-- Events End -->
+
+        <!-- COUNTER START -->
+         <section>
+            <div class="counter-main container-fluid text-center border">
+                <div class="counter-item">
+                    <div class="counter-sub-item"></div>
+                    <p>Albar Khan</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-sub-item"></div>
+                    <p>Albar Khan</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-sub-item"></div>
+                    <p>Albar Khan</p>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-sub-item"></div>
+                    <p>Albar Khan</p>
+                </div>
+            </div>
+         </section>
+
+         <!-- COUNTER ENDS -->
+
+         <section>
+            <div class="contact-main container-md" id="contact-us">
+                <div class="contact-head conatiner text-center">
+                    <h1>CONTACT US</h1>
+                </div>
+                <div class="contact-body container-md">
+                    <div class="contact-info">
+                        <h4>9967463633</h4>
+                        <h4>albarkhan60@gmail.com</h4>
+                        <h4>Room no:11 Postman chawl golibar santacruz east</h4>
+                    </div>
+                    <div class="contact-form">
+                        <form action="" method="post">
+                            <h4><label for="name">Name</label></h4>
+                            <input type="text" class="form-control">
+                            
+                            <h4><label for="name">Phone Number</label></h4>
+                            <input type="text" class="form-control">
+                            
+                            <h4><label for="name">Email</label></h4>
+                            <input type="text" class="form-control">
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </section>
     </div>
     
     <!-- footer -->
         <footer>
             <div class="foot-mid" id="foot-mid">
                 <div class="foot-mid-item" id="item1">
-                    <h4>About Us</h4>
+                    <h4>Raza Software and Technology</h4>
                     <p>FOR 11+ YEARS, WE'VE EXCELLED IN TALLY SOLUTIONS, DELIVERING QUALITY AND SATISFACTION.</p>
                 </div>
                 <div class="foot-mid-item">
@@ -228,7 +345,7 @@
                 <div class="foot-mid-item" id="foot-mid-item-4">
                     <h4>GET IN TOUCH</h4>
                     <p><i class="fa fa-phone"> </i> + 9958473633</p>
-                    <p><i class="fa fa-envelope"></i>albarkhan60@gmail.com</p>
+                    <p><i class="fa fa-envelope"></i>albarkhan60@gmail</p>
                     <p><i class="fa fa-home"></i>Room no:11 POstman chawl Golibar Santacruz (east)</p>
                     <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-whatsapp"></i></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-youtube"></i></p>
                 </div>
@@ -244,6 +361,7 @@
     <!-- footer -->
 
     <script>
+        // Function for slider
         function myFunction(){
             const x = document.getElementById("mySidebar");
 
@@ -254,6 +372,8 @@
                 x.className = "sidebar";
             }
         }
+
+        // function for to colse slider
         function closeSideBar(){
             const x = document.getElementById("mySidebar");
             x.className  = "sidebar";
@@ -275,18 +395,20 @@
                 // $('.menu-btn').hide();
                  }
         }
-        // function minusIcon(){
-        //     const i = document.getElementById("icon");
-        //     const i1 = document.getElementById("icon1");
-        //     const i2 = document.getElementById("icon2");
+        function minusIcon(){
+            const i = document.getElementById("icon");
+            const i1 = document.getElementById("icon1");
+            const i2 = document.getElementById("icon2");
 
-        //     if(i.className == "icon"){
-        //         i.className += " minus";
-        //     }
-        //     else{
-        //         i.className = "icon";
-        //     }
-        // }
+            if(i.className == "icon"){
+                i.className += " minus";
+            }
+            else{
+                i.className = "icon";
+            }
+        }
+
+            // Event Listener for to-top button
             const toTop = document.querySelector('.to-top');
             // const toTop = document.getElementById("to-top");
             window.addEventListener("scroll",function(){
@@ -306,16 +428,27 @@
         //         toTop.className = "to-top";
         //     }
         // })
+
+        // javascript for slider
+        const slides = document.querySelectorAll(".slides");
+        // console.log(slide);
+        slides.forEach((slide,index)=>{
+            slide.style.left = `${index * 100}%`
+        })
+
     </script>
 
     <script>
         $(document).ready(function(){
+
+            // Jquery for slider to open
             $('.menu-btn').click(function (){
                 $('.sidebar.responsive').addClass('active');
                 $('.menu-btn').hide();
                 $('.home-info').hide();
             })
 
+            // jquery for slider to close
             $('.close-btn').click(function (){
                 $('.sidebar.responsive').removeClass('active');
                 // $('.menu-btn').show();
@@ -328,8 +461,17 @@
                  }, 3000);
             })
 
+                // jquery for submneu to toggle
             $('.sub-btn').click(function(){
                 $(this).next('.sub-menu').slideToggle();
+                
+                // if ($("#sub-menu-1").is(":visible")) {
+                //     console.log("Element is visible (ON)");
+                //     alert("subon");
+                // } else {
+                //     console.log("Element is hidden (OFF)");
+                //     alert("sub close");
+                // }
                 // $(this).find('.dropdown').toggleClass('rotate'); 
             })
 
