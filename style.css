@@ -541,6 +541,18 @@ header{
 }
 /* CONTACT US END */
 
+/* google map */
+ .google-map iframe{
+    width: 100%;
+    padding: 20px;
+ }
+
+
+/* google map end */
+
+
+
+
 /* FOTTER START */
 
 footer{
@@ -653,6 +665,12 @@ footer .foot-bottom a{
     .home .home-info h1{
         font-size: 40px;
     }
+
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 
     .about-info{
         width: 100%;
