@@ -475,19 +475,70 @@ header{
 /* COUNTER END */
 
 /* COUNTACT US START */
+
 .contact-main{
     margin: 30px 0px;
+    background-color: whitesmoke;
+    font-family: "Dosis",sans-serif;
+    margin-top: 50px;
+    padding: 30px 0px;
 }
+
+.contact-main p{
+    font-size: 20px;
+}
+
 .contact-main .contact-head{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
+
+.contact-main h3{
+    font-weight: bold;
+}
+
 .contact-main .contact-body{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
-    gap: 30px;
+    justify-content: space-around;
+    /* gap: 30px; */
 }
 
+.contact-main .contact-body .contact-form{
+    width: 40%;
+}
+
+.contact-main .contact-body .contact-form input{
+    margin: 25px 0px;
+}
+
+.contact-main .contact-body .contact-info{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.contact-main .contact-body .contact-info .contact-info-item{
+    display: flex;
+    gap: 15px;
+}
+
+.contact-main .contact-body .contact-info a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.contact-main .contact-body .contact-info i{
+    font-size: 20px;
+    color: var(--primary);
+}
+
+#submit{
+    background-color: var(--primary);
+    margin-top: 15px;
+    padding: 5px 15px;
+    color: white;
+}
 /* CONTACT US END */
 
 /* FOTTER START */
@@ -774,6 +825,22 @@ footer .foot-bottom a{
     }
 
     /* Our Team End */
+
+    /* contact us form start */
+
+    .contact-main .contact-body{
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .contact-main .contact-body .contact-info{
+        width: 100%;
+    }
+    .contact-main .contact-body .contact-form{
+        width: 100%;
+    }
+    /* contact us form end */
+
 
     /* footer start */
 
