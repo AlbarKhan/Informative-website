@@ -456,20 +456,41 @@ header{
     }
     .counter-item{
         /* border: 1px solid; */
-        width: 135px;
-        height: 135px;
+        width:192px;
+        height:200px;
         display: flex;
         gap: 35px;
         flex-direction: column;
         align-items: center;
     }
+    .counter-item p{
+        font-size: 14px;
+    }
     .counter-main .counter-sub-item{
-        border: 1px solid;
+        /* border: 1px solid; */
         height: 100%;
         width: 43%;
+        position: relative;
+        box-shadow: 0 2px 0 2px rgba(0,0,0,0.2);
         transform: rotate(45deg);
         background-color: var(--white);
 
+    }
+    .counter-main .counter-sub-item:hover{
+        transform: rotate(180deg);
+    }
+    .counter-main .counter-sub-item:hover i{
+        transform: rotate(180deg);
+    }
+    .counter-main .counter-sub-item i{
+        position: absolute;
+        top: 35%;
+        right: 25%;
+        left: 25%;
+        bottom: 25;
+        color: var(--primary);
+        font-size: 28px;
+        transform: rotate(315deg);
     }
 
 /* COUNTER END */
@@ -843,6 +864,15 @@ footer .foot-bottom a{
     }
 
     /* Our Team End */
+    .counter-item{
+        width: 130px;
+    }
+    .counter-main .counter-sub-item{
+        width: 66%;
+    }
+    /* COUNTER start */
+
+    /* Counter end */
 
     /* contact us form start */
 
@@ -900,6 +930,9 @@ footer .foot-bottom a{
         align-items: center;
         gap: 80px;
     }
+    .counter-main .counter-sub-item{
+        width: 71%;
+    }
 
     footer .foot-mid .foot-mid-item{
         width: 100%;
@@ -910,3 +943,19 @@ footer .foot-bottom a{
         /* align-items: center; */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
