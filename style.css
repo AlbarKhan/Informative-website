@@ -455,7 +455,6 @@ header{
         background-color: whitesmoke;
     }
     .counter-item{
-        /* border: 1px solid; */
         width:192px;
         height:200px;
         display: flex;
@@ -467,13 +466,13 @@ header{
         font-size: 14px;
     }
     .counter-main .counter-sub-item{
-        /* border: 1px solid; */
         height: 100%;
         width: 43%;
         position: relative;
         box-shadow: 0 2px 0 2px rgba(0,0,0,0.2);
         transform: rotate(45deg);
-        background-color: var(--white);
+        background-color: var(--primary);
+        border-radius: 6px;
 
     }
     .counter-main .counter-sub-item:hover{
@@ -488,7 +487,7 @@ header{
         right: 25%;
         left: 25%;
         bottom: 25;
-        color: var(--primary);
+        color: var(--white);
         font-size: 28px;
         transform: rotate(315deg);
     }
@@ -938,9 +937,7 @@ footer .foot-bottom a{
         width: 100%;
     }
     footer .foot-mid{
-        /* grid-template-columns: repeat(1,1fr); */
         flex-direction: column;
-        /* align-items: center; */
     }
 }
 
