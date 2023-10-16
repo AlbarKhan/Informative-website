@@ -40,6 +40,7 @@ header{
     border-radius: 10px;
     overflow: hidden;
     /* display: flex; */
+    transition: 5s;
   }
   
   .slides{
@@ -625,7 +626,7 @@ header{
     border: 0px solid;
 }
 
-.contact-main .contact-body .contact-form input{
+.contact-main .contact-body .contact-form .input{
     margin: 25px 0px;
 }
 
@@ -964,15 +965,19 @@ footer .foot-bottom a{
     }
 
     /* Our Team End */
+    
+
+    /* COUNTER start */
+
     .counter-item{
         width: 130px;
     }
     .counter-main .counter-sub-item{
         width: 66%;
     }
-    /* COUNTER start */
 
     /* Counter end */
+
 
     /* contact us form start */
 

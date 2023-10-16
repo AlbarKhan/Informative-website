@@ -33,9 +33,9 @@
             </div>
             <div class="bottom-nav">
                 <div class="sidebar" id="mySidebar">
-                    <div class="close-btn"><a href=""><i class="fa fa-close"></i></a></div>
+                    <div class="close-btn"><a href="#" onclick="closeSideBar()"><i class="fa fa-close"></i></a></div>
                     <div class="menu">
-                        <div class="item"><a href="#" onclick="closeSideBar()">HOME</a></div>
+                        <div class="item"><a href="#home" onclick="closeSideBar()">HOME</a></div>
                         <div class="item"><a href="#about" onclick="closeSideBar()">ABOUT</a></div>
                         <div class="item"><a href="#service" onclick="closeSideBar()">SERVICES</a></div>
                         <div class="item"><a href="#event" onclick="closeSideBar()">TESTIMONIALS  </a></div>
@@ -339,7 +339,7 @@
          <section>
                 <!-- Post Slider   -->
         <div class="post-slider" id="event">
-            <h1 class="slider-title">Trending Posts</h1>
+            <h1 class="slider-title">Testimonials</h1>
             <i class="fas fa-chevron-left prev"></i>
             <i class="fas fa-chevron-right next"></i>
 
@@ -398,14 +398,24 @@
                         <h4>Room no:11 Postman chawl golibar santacruz east</h4> -->
                     </div>
                     <div class="contact-form ">
-                        <form action="" method="post">
-                            <input type="text" class="form-control" placeholder="Name" id="name">
-                            
-                            <input type="text" class="form-control" placeholder="Phone number" id="phone">
-                            
-                            <input type="text" class="form-control" placeholder="Email" id="email">
+                        <form action="" method="post" id="form">
+                            <div class="input">
+                                <input type="text" class="form-control" placeholder="Name" id="name">
+                                <div class="err-msg" id="err-name" style="display: none;">Invalid Name</div>
+                            </div>
+                            <div class="input">
+                                <input type="number" class="form-control" placeholder="Phone number" id="phone">
+                                <div class="err-msg" id="err-phone" style="display: none;"></div>
+                            </div>
 
-                            <textarea name="message" id="message" class="form-control" rows="5"></textarea>
+                            <div class="input">
+                                <input type="text" class="form-control" placeholder="Email" id="email">
+                                <div class="err-msg" id="err-mail" style="display: none;"></div>
+                            </div>
+                
+                            <div class="input">
+                                <textarea name="message" id="message" class="form-control" rows="5"></textarea>
+                            </div>
                             <button type="submit" id="submit">Submit</button>
                         </form>
                     </div>
@@ -431,19 +441,19 @@
                 </div>
                 <div class="foot-mid-item">
                     <h4>QUICK LINKS</h4>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>Home</a>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>About us</a>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>Services</a>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>Testimonials</a>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>Contact us</a>
+                    <a href="#home"><i class="fa-solid fa-chevron-right"></i>Home</a>
+                    <a href="#about"><i class="fa-solid fa-chevron-right"></i>About us</a>
+                    <a href="#service"><i class="fa-solid fa-chevron-right"></i>Services</a>
+                    <a href="#event"><i class="fa-solid fa-chevron-right"></i>Testimonials</a>
+                    <a href="#contact-us"><i class="fa-solid fa-chevron-right"></i>Contact us</a>
                 </div>
                 <div class="foot-mid-item">
                     <h4>OUR SERVICES</h4>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>Web Development</a>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>App Development</a>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>Tally Modules </a>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>Static website</a>
-                    <a href=""><i class="fa-solid fa-chevron-right"></i>Dynamic website</a>
+                    <a href="#service"><i class="fa-solid fa-chevron-right"></i>Web Development</a>
+                    <a href="#service"><i class="fa-solid fa-chevron-right"></i>App Development</a>
+                    <a href="#service"><i class="fa-solid fa-chevron-right"></i>Tally Modules </a>
+                    <a href="#service"><i class="fa-solid fa-chevron-right"></i>Static website</a>
+                    <a href="#service"><i class="fa-solid fa-chevron-right"></i>Dynamic website</a>
                 </div>
                 <div class="foot-mid-item" id="foot-mid-item-4">
                     <h4>GET IN TOUCH</h4>
@@ -539,7 +549,6 @@
             slide.style.left = `${index * 100}%`
         })
 
-
         // script for COunter
 
         var count  = document.getElementsByClassName("count");
@@ -554,10 +563,80 @@
             }
         }
         setInterval(intervalFunction,500);
-        // console.log(inc);
-
 
         // Form Validation
+
+        const  form = document.getElementById("form");
+
+        form.addEventListener("submit",function(e){
+            e.preventDefault();
+            
+            const  name  = document.getElementById("name").value;
+            const  phone = document.getElementById("phone").value;
+            const email  = document.getElementById("email").value;
+
+            if (name.trim() == "" || name == null) {
+                // alert("Invalid Name");
+                 document.getElementById("err-name").textContent = "Invalid name !";
+                 document.getElementById("err-name").style.color = "red";
+                 document.getElementById("err-name").style.display = "block";
+                return;
+            }
+            else{
+                document.getElementById("err-name").style.display = "none";
+            }
+
+            if (phone.length <1 || phone.length == null) {
+                document.getElementById("err-phone").textContent = "Phone is empty !";
+                document.getElementById("err-phone").style.color = "red";
+                document.getElementById("err-phone").style.display = "block";
+                 return;
+            }
+            else{
+                document.getElementById("err-phone").style.display = "none";
+            }
+            if (phone.length<10) {
+                document.getElementById("err-phone").textContent = "phone character is less than 10";
+                document.getElementById("err-phone").style.color = "red";
+                document.getElementById("err-phone").style.display = "block";
+                return
+            }
+            else{
+                document.getElementById("err-phone").style.display = "none";
+            }
+            if (phone.length>10) {
+                document.getElementById("err-phone").textContent = "phone number is greater than 10";
+                document.getElementById("err-phone").style.color = "red";
+                document.getElementById("err-phone").style.display = "block";
+                return
+            }
+            else{
+                document.getElementById("err-phone").style.display = "none";
+            }
+            if (email.trim() == "" || email ==null) {
+                document.getElementById("err-mail").textContent = "Email is empty !";
+                document.getElementById("err-mail").style.color = "red";
+                document.getElementById("err-mail").style.display = "block";
+                return;
+            }
+            else{
+                document.getElementById("err-mail").style.display = "none";
+            }
+            if (isValidEmail(email)) {
+                document.getElementById("err-mail").style.display = "none";
+            }
+            else{
+                document.getElementById("err-mail").textContent = "Invalid email";
+                document.getElementById("err-mail").style.color = "red";
+                document.getElementById("err-mail").style.display = "block";
+                return;
+            }
+        });
+
+        function isValidEmail(Email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(Email);
+        }
 
     </script>
 
