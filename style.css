@@ -253,6 +253,7 @@ header{
 }
 
 .about-item .item .sub-menu {
+    display: none;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-bottom: 4px solid var(--primary);
     text-align: start;
@@ -342,18 +343,42 @@ header{
 
 .our-team .our-team-content .our-team-item{
     width: 33%;
+    /* height: 100%; */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     gap: 20px;
     border-radius: 25px;
     border-bottom:4px solid var(--primary) ;
+    position: relative;
+}
+.our-team .our-team-content .our-team-item .our-team-icon{
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+    left: 15%;
+    padding: 2px;
+}
+.our-team .our-team-content .our-team-item .our-team-icon i{
+    font-size: 30px;
+    padding: 0px 10px;
+    transition: 1s;
+    opacity: 0;
+}
+.our-team .our-team-content .our-team-item:hover i{
+    opacity: 1;
 }
 
-.our-team .our-team-content img{
+.our-team .our-team-content .our-team-item img{
     width: 100%;
-    height: 50%;
-    margin-bottom: 15px;
-    border-top-left-radius: 25px;
-    border-top-right-radius:25px;
+    height: 100%;
+    border-radius: 25px;
+    /* opacity: 1; */
+    background-color: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    /* background-color: rgba(0, 0, 0, 0.6); */
+
+}
+.our-team .our-team-content .our-team-item img:hover {
+    /* color: rgba(0, 0, 0, 0.6); */
+    opacity: 0.6;
 }
 .our-team .our-team-content .our-team-item p{
     padding: 0px 5px;
@@ -553,6 +578,7 @@ header{
 .post-slider .post-wrapper .post .slider-image{
     width: 100%;
     height: 100%;
+    /* height: auto; */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -563,11 +589,13 @@ header{
 /* COUNTACT US START */
 
 .contact-main{
-    margin: 30px 0px;
+    margin: 80px 0px;
     background-color: whitesmoke;
     font-family: "Dosis",sans-serif;
-    margin-top: 50px;
-    padding: 30px 0px;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    padding: 130px 0px;
+    /* border:  1px solid; */
 }
 
 .contact-main p{
@@ -591,6 +619,10 @@ header{
 
 .contact-main .contact-body .contact-form{
     width: 40%;
+}
+.contact-main .contact-body .contact-form button {
+    border-radius: 10px;
+    border: 0px solid;
 }
 
 .contact-main .contact-body .contact-form input{
@@ -631,6 +663,7 @@ header{
  .google-map iframe{
     width: 100%;
     padding: 20px;
+    margin-top: 50px;
  }
 
 
@@ -656,7 +689,8 @@ footer .foot-mid{
     justify-content: space-around; */
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 footer .foot-mid .foot-mid-item{
@@ -687,6 +721,7 @@ footer .foot-mid .foot-mid-item p{
 
 #foot-mid-item-4 i{
     font-size: 21px;
+    padding: 5px 0px;
 }
 
 footer #item1{
@@ -704,7 +739,7 @@ footer h4{
 footer .foot-bottom{
     border-top: 1px solid;
     text-align: center;
-    padding-top: 20px;
+    padding: 35px 0px;
     margin-top: 15px;
 }
 
@@ -893,7 +928,7 @@ footer .foot-bottom a{
     }
 
     .home-info a{
-        width: 35%;
+        width: 18%;
     }
 
     .sidebar.responsive.active .home-info {
@@ -980,6 +1015,10 @@ footer .foot-bottom a{
     }
     .about-img{
         width: 95%;
+    }
+
+    .home-info a{
+        width: 38%;
     }
 
     .services .services-content{

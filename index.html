@@ -119,28 +119,41 @@
 
         <!-- OUR TEAM  START-->
         <section>
-            <div class="our-team container-md mt-5 text-center">
+            <div class="our-team container-md mt-5 p-5 text-center border">
                 <div class="our-team-top">
                     <h1>Our Team</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>       
                 </div>
                 <div class="our-team-content">
                     <div class="our-team-item">
                         <img src="web-teamn-img.png" alt="">
-                        <h4>Web Team</h4>
-                        <p>To become successful online, you only need to remember the following : Good Heart + Passion + Web Design + SEO + Digital Marketing + Dedication + Positiveness + Patience = Success”</p>
+                        <div class="our-team-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
                     </div>
                     <div class="our-team-item">
                         <img src="Andriod-team--img.png" alt="">
-                       <h4>Android Team</h4>
-                        <p>To become successful online, you only need to remember the following : Good Heart + Passion + Web Design + SEO + Digital Marketing + Dedication + Positiveness + Patience = Success”</p>
+                        <div class="our-team-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
                     </div>
                     <div class="our-team-item">
-
                         <img src="ex1-img.png" alt="">
-                        <h4>Tally Team</h4>
-                        <p>To become successful online, you only need to remember the following : Good Heart + Passion + Web Design + SEO + Digital Marketing + Dedication + Positiveness + Patience = Success”</p>
+                        <div class="our-team-icon">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -386,14 +399,14 @@
                     </div>
                     <div class="contact-form ">
                         <form action="" method="post">
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="text" class="form-control" placeholder="Name" id="name">
                             
-                            <input type="text" class="form-control" placeholder="Phone number">
+                            <input type="text" class="form-control" placeholder="Phone number" id="phone">
                             
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" placeholder="Email" id="email">
 
                             <textarea name="message" id="message" class="form-control" rows="5"></textarea>
-                            <button type="sucmit" id="submit">Submit</button>
+                            <button type="submit" id="submit">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -444,7 +457,7 @@
             <div class="foot-bottom">
                 <div class="items">
                     <p><i class="fa-regular fa-copyright"></i> Copyright <b>Raza Software & Technology</b>. All Rights Reserved</p>
-                    <span>Designed & Developed by <a href="">Raza Software & Technology</a></span>
+                    <span>Designed & Developed by <a href="http://razasofttech.com/index.html">Raza Software & Technology</a></span>
                 </div>
             </div>
         </footer>
@@ -532,7 +545,7 @@
         var count  = document.getElementsByClassName("count");
         var inc =[];
         function intervalFunction(){
-            for(var i=0;i<count.length;i++){
+            for(var i=0;i<count.length;i++){    
                 inc.push(1);
                 if (inc[i] != count[i].getAttribute("max-data")) {
                     inc[i]++;
@@ -540,8 +553,11 @@
                 count[i].innerHTML =  inc[i];
             }
         }
-        setInterval(intervalFunction,50);
+        setInterval(intervalFunction,500);
         // console.log(inc);
+
+
+        // Form Validation
 
     </script>
 
@@ -595,7 +611,7 @@ $('.post-wrapper').slick({
               }
             },
             {
-              breakpoint: 600,
+              breakpoint: 880,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
