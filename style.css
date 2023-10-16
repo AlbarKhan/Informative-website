@@ -184,6 +184,7 @@ header{
     justify-content: center;
     text-decoration: none;
     align-items: center;
+    transition: 0.5s;
 }
 .main-wrapper .to-top.active{
     opacity: 1;
@@ -194,18 +195,18 @@ header{
 .about{
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    /* gap: 25px; */
     justify-content: space-between;
     margin-top: 30px;
     border: 1px sol;
 }
 
 .about-info{
-    width: 60%;
+    width: 57%;
 }
 
 .about-img{
-    width: 30%;
+    width: 40%;
     height: 100%;
     margin-top:45px;
 }
@@ -297,6 +298,10 @@ header{
     border-radius: 25px;
     margin-bottom: 20px;
     border-bottom: 4px solid var(--primary);
+}
+
+.services .services-content .services-content-item i{
+    font-size: 30px;
 }
 
 
@@ -473,7 +478,7 @@ header{
         transform: rotate(45deg);
         background-color: var(--primary);
         border-radius: 6px;
-
+        transition:0.5s;
     }
     .counter-main .counter-sub-item:hover{
         transform: rotate(180deg);
@@ -493,6 +498,67 @@ header{
     }
 
 /* COUNTER END */
+
+/* Styling Post Slider */
+.post-slider{
+    position: relative;
+}
+
+.post-slider .slider-title{
+    text-align: center;
+    margin: 30px auto;
+}
+
+.post-slider .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.post-slider .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.post-slider .post-wrapper{
+    width: 84%;
+    height: 350px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post{
+    height: 320px;
+    width: 330px;
+    margin: 0px 10px;
+    display: inline-block;
+    background:white;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem #a0a0a0;
+}
+
+.post-slider .post-wrapper .post .post-info{
+    height: 130px;
+    padding: 0px 5px;    
+}
+
+.post-slider .post-wrapper .post .slider-image{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* end Styling Post Slider */
+
 
 /* COUNTACT US START */
 

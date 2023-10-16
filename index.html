@@ -39,7 +39,6 @@
                         <div class="item"><a href="#about" onclick="closeSideBar()">ABOUT</a></div>
                         <div class="item"><a href="#service" onclick="closeSideBar()">SERVICES</a></div>
                         <div class="item"><a href="#event" onclick="closeSideBar()">TESTIMONIALS  </a></div>
-                        <div class="item"><a href="#" onclick="closeSideBar()">SHOP</a></div>
                         <div class="item"><a href="#contact-us" onclick="closeSideBar()">CONTACT</a></div>
                     </div>
                 </div>
@@ -72,9 +71,13 @@
         <!-- ABOUT SECTION -->
             <a href="#home" class="to-top" id="to-top"><i class="fa-solid fa-arrow-up"></i></a>
         <section>
-            <div class="about container-md mt-5">
-
-                <div class="about-info" id="about">
+            <div class="about container-md mt-5" id="about">
+                <div class="about-head text-center mt-2 p-3 ">
+                    <h1>ABOUT</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+    
+                </div>
+                <div class="about-info">
                     <h4>ABOUT THE COMPANY</h4>
                     <div class="about-item">
                         <div class="item">
@@ -156,17 +159,20 @@
 
                 <div class="services-content container-md">
                     <div class="services-content-item">
+                        <i class="fa-solid fa-globe"></i>
                         <h3>Web Development</h3>
                         <p>“Your website is the center of your digital ecosystem, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.”
                         </p>
                     </div>
                     <div class="services-content-item ">
+                        <i class="fa-brands fa-android"></i>
                         <h3>Android Development</h3>
                         <p>“Websites promote you 24/7: No employee will do that.” - Paul Cookson.
                             “A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away” - Antonie De-Saint Exupery.
                             “Website without visitors is like a ship lost in the horizon.” - Dr. Christopher Dayagda.</p>
                     </div>
                     <div class="services-content-item ">
+                        <i class="fa-regular fa-message"></i>
                         <h3>Tally Modules</h3>
                         <p>“A successful website does three things: It attracts the right kinds of visitors. Guides them to the main services or product you offer. Collect Contact details for future ongoing relation.”
                             “Let us take you into a deeper experience, make a moment a lasting conveyable memory. Let us help build your tribe.” ― Deep Immersion.
@@ -174,6 +180,7 @@
 
                     </div>
                     <div class="services-content-item ">
+                        <i class="fa-solid fa-globe"></i>
                         <h3>Web Development</h3>
                         <p>
                             “Websites promote you 24/7: No employee will do that.” - Paul Cookson.
@@ -183,6 +190,7 @@
 
                     </div>
                     <div class="services-content-item">
+                        <i class="fa-brands fa-android"></i>
                         <h3>Android Development</h3>
                         <p>
                             “Your website is the center of your digital ecosystem, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.”
@@ -190,6 +198,7 @@
 
                     </div>
                     <div class="services-content-item">
+                        <i class="fa-regular fa-message"></i>
                         <h3>Tally Modules</h3>
                         <p>
                             “Websites promote you 24/7: No employee will do that.” - Paul Cookson.
@@ -313,6 +322,37 @@
          </section>
 
          <!-- COUNTER ENDS -->
+
+         <section>
+                <!-- Post Slider   -->
+        <div class="post-slider" id="event">
+            <h1 class="slider-title">Trending Posts</h1>
+            <i class="fas fa-chevron-left prev"></i>
+            <i class="fas fa-chevron-right next"></i>
+
+            <div class="post-wrapper">
+
+                <div class="post">
+                    <img src="tally-team.png" alt="" class="slider-image">
+                </div>
+
+                <div class="post">
+                    <img src="web-teamn-img.png" alt="" class="slider-image">
+                </div>
+
+                <div class="post">
+                    <img src="web-team-img.png" alt="" class="slider-image">
+                </div>
+
+                <div class="post">
+                    <img src="Andriod-team--img.png" alt="" class="slider-image">
+                </div>
+
+            </div>
+
+        </div>
+        <!--  End Post Slider -->
+         </section>
 
          <section>
             <div class="contact-main container-fluid" id="contact-us">
@@ -500,7 +540,7 @@
                 count[i].innerHTML =  inc[i];
             }
         }
-        setInterval(intervalFunction,100);
+        setInterval(intervalFunction,50);
         // console.log(inc);
 
     </script>
@@ -531,19 +571,52 @@
                 // jquery for submneu to toggle
             $('.sub-btn').click(function(){
                 $(this).next('.sub-menu').slideToggle();
-                
-                // if ($("#sub-menu-1").is(":visible")) {
-                //     console.log("Element is visible (ON)");
-                //     alert("subon");
-                // } else {
-                //     console.log("Element is hidden (OFF)");
-                //     alert("sub close");
-                // }
-                // $(this).find('.dropdown').toggleClass('rotate'); 
-            })
-
-        })
+                });
+            });
     </script>
+    <script>
+        $(document).ready(function(){
+
+$('.post-wrapper').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        nextArrow: $('.next'),
+        prevArrow: $('.prev'),
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        
+});
+});
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
 </body>
 </html>
