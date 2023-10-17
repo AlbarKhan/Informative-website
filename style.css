@@ -282,7 +282,7 @@ header{
 }
 
 .services .services-content{
-    text-align: center;
+    text-align: start;
 }
 
 .services .services-content{
@@ -304,6 +304,7 @@ header{
 
 .services .services-content .services-content-item i{
     font-size: 30px;
+    color: var(--primary);
 }
 
 
@@ -485,6 +486,7 @@ header{
         padding: 30px 0px;
         background-color: whitesmoke;
     }
+
     .counter-item{
         width:192px;
         height:200px;
@@ -493,9 +495,11 @@ header{
         flex-direction: column;
         align-items: center;
     }
+
     .counter-item p{
         font-size: 14px;
     }
+
     .counter-main .counter-sub-item{
         height: 100%;
         width: 43%;
@@ -506,12 +510,15 @@ header{
         border-radius: 6px;
         transition:0.5s;
     }
+
     .counter-main .counter-sub-item:hover{
         transform: rotate(180deg);
     }
+
     .counter-main .counter-sub-item:hover i{
         transform: rotate(180deg);
     }
+
     .counter-main .counter-sub-item i{
         position: absolute;
         top: 35%;
@@ -521,6 +528,10 @@ header{
         color: var(--white);
         font-size: 28px;
         transform: rotate(315deg);
+    }
+
+    .counter-subitem-info .count{
+        transition: 0.2s;
     }
 
 /* COUNTER END */
@@ -538,7 +549,7 @@ header{
 .post-slider .next{
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 2%;
     font-size: 2em;
     color: var(--primary);
     cursor: pointer;
@@ -547,7 +558,7 @@ header{
 .post-slider .prev{
     position: absolute;
     top: 50%;
-    left: 30px;
+    left: 2%;
     font-size: 2em;
     color: var(--primary);
     cursor: pointer;
@@ -569,6 +580,7 @@ header{
     background:white;
     border-radius: 5px;
     box-shadow: 1rem 1rem 1rem -1rem #a0a0a0;
+    /* border: 1px solid; */
 }
 
 .post-slider .post-wrapper .post .post-info{
@@ -596,7 +608,6 @@ header{
     margin-top: 150px;
     margin-bottom: 80px;
     padding: 130px 0px;
-    /* border:  1px solid; */
 }
 
 .contact-main p{
@@ -604,7 +615,7 @@ header{
 }
 
 .contact-main .contact-head{
-    margin-bottom: 30px;
+    margin-bottom: 130px;
 }
 
 .contact-main h3{
@@ -614,8 +625,7 @@ header{
 .contact-main .contact-body{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    /* gap: 30px; */
+    justify-content: space-between;
 }
 
 .contact-main .contact-body .contact-form{
@@ -684,14 +694,10 @@ footer{
 }
 
 footer .foot-mid{
-    /* display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-    justify-content: space-around; */
     display: flex;
     justify-content: center;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 footer .foot-mid .foot-mid-item{
@@ -981,14 +987,16 @@ footer .foot-bottom a{
 
     /* contact us form start */
 
+
     .contact-main .contact-body{
         flex-direction: column;
-        /* align-items: center; */
+        gap: 50px;
     }
 
     .contact-main .contact-body .contact-info{
         width: 100%;
     }
+
     .contact-main .contact-body .contact-form{
         width: 100%;
     }
@@ -1018,6 +1026,7 @@ footer .foot-bottom a{
     .sidebar.responsive{
         width: 80%;
     }
+
     .about-img{
         width: 95%;
     }
@@ -1039,6 +1048,7 @@ footer .foot-bottom a{
         align-items: center;
         gap: 80px;
     }
+
     .counter-main .counter-sub-item{
         width: 71%;
     }
@@ -1046,6 +1056,7 @@ footer .foot-bottom a{
     footer .foot-mid .foot-mid-item{
         width: 100%;
     }
+
     footer .foot-mid{
         flex-direction: column;
     }
